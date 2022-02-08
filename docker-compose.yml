@@ -8,6 +8,9 @@ services:
       POSTGRES_PASSWORD: example
     networks:
       - postgres
+    volumes:
+      - ./pagila/pagila-schema.sql:/docker-entrypoint-initdb.d/01_pagila-schema.sql:ro
+      - ./pagila/pagila-data.sql:/docker-entrypoint-initdb.d/02_pagila-data.sql:ro
 
   pgadmin:
     image: dpage/pgadmin4
