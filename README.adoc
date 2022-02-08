@@ -1,0 +1,10 @@
+= SQL Demo
+
+== Usage
+----
+docker-compose up -d
+----
+
+Open http://localhost:8080. Credentials:
+* Pgadmin: scott@example.com / tiger
+* Postgres: postgres / example
