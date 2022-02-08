@@ -1,10 +1,22 @@
 = SQL Demo
 
 == Usage
+Clone this project with submodules:
+
+----
+git clone --recurse-submodules <this repository url>
+----
+
+Then docker it up:
 ----
 docker-compose up -d
 ----
 
 Open http://localhost:8080. Credentials:
+
 * Pgadmin: scott@example.com / tiger
 * Postgres: postgres / example
+
+== Dataset
+
+Dataset comes from https://github.com/devrimgunduz/pagila.git (See here for schema: https://dev.mysql.com/doc/sakila/en/sakila-structure.html)
